@@ -21,14 +21,14 @@ pipeline {
         }
       }
     }
-    stage('deploy') {
-        steps {
-            script {
-                docker.withRegistry('https://docker.mjamsek.com', registryCredential) {
-                    dockerImage.push()
-                }
-            }
-        }
+    // stage('deploy') {
+    //    steps {
+    //        script {
+    //            docker.withRegistry('https://docker.mjamsek.com', registryCredential) {
+    //                dockerImage.push()
+    //            }
+    //        }
+    //    }
     }
   }
 }
