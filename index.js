@@ -1,1 +1,1 @@
-console.log("\n****************\nDocker script is runned!\n****************\n");
+console.log("\n****************\nDocker script is running!\n****************\n");
