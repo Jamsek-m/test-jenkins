@@ -10,7 +10,7 @@ pipeline {
 
   tools {
     maven "maven3.6"
-    node "node11.6"
+    nodejs "node11.6"
     jdk "jdk8"
   }
 
