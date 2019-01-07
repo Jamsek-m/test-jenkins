@@ -9,6 +9,12 @@ pipeline {
   agent any
 
   stages {
+    stage('testing env') {
+      steps {
+        sh "mvn -v"
+        sh "npm -v"
+      }
+    }
     stage('cloning git') {
         steps {
             git 'https://github.com/Jamsek-m/test-jenkins.git'
